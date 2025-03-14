@@ -1,4 +1,4 @@
-const CustomBlock = require('../CustomBlock');
+const CustomBlock = require('../../src/CustomBlock');
 
 class SnowyGrass extends CustomBlock {
     constructor() {

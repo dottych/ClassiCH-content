@@ -1,4 +1,4 @@
-const Generation = require('../Generation');
+const Generation = require('../../src/Generation');
 
 class GenerationWalls extends Generation {
     constructor() {

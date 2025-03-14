@@ -1,4 +1,4 @@
-const Generation = require('../Generation');
+const Generation = require('../../src/Generation');
 
 class GenerationParkour extends Generation {
     constructor() {

@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const Generation = require('../Generation');
+const Generation = require('../../src/Generation');
 
 class GenerationBop extends Generation {
     constructor() {

@@ -1,7 +1,7 @@
 const fs = require('fs');
 const perlin = require('perlin-noise');
 
-const Generation = require('../Generation');
+const Generation = require('../../src/Generation');
 
 class GenerationBoppin extends Generation {
     constructor() {
