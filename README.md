@@ -1,6 +1,8 @@
 # ClassiCH-content
 Generations and custom blocks for ClassiCH.
 
+###### Note: For the main repository, go to https://github.com/dottych/ClassiCH
+
 ## Generations
 A generation is a JavaScript file containing code that decides how the world will look like.  
 They belong in: `/server/generations/`  
