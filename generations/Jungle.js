@@ -4,12 +4,16 @@ const Generation = require('../../src/Generation');
 
 class GenerationJungle extends Generation {
     constructor() {
-        super("Jungle", "marioood");
+        super("Jungle", "marioood", false);
     }
 
     generate() {
         //super secret hacker toggle for tall grass.... actual code hwere this is used is at line 150
+        // note: if you enable this, you'll have to enable CPE in the constructor
         const useCustomGrass = false;
+
+        // change accordingly
+        const tallGrassID = 95;
         
         const rand = (scale) => {
             return Math.floor(Math.random() * scale);
@@ -157,7 +161,7 @@ class GenerationJungle extends Generation {
         //later me here. im pretty sure thats not how you calculate area
         const area = (this.x - dist * 2) + (this.z - dist * 2);
         //dandelions, roses, and...... grass?!?!?!
-        const flowers = [37, 38, 95];
+        const flowers = [37, 38, tallGrassID];
         //flowers
         for(let i = 0; i < area / 2; i++) {
             let x = rand(this.x);

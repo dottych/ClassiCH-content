@@ -4,12 +4,19 @@ const Generation = require('../../src/Generation');
 
 class GenerationCaves extends Generation {
     constructor() {
-        super("Caves", "marioood");
+        super("Caves", "marioood", false);
     }
 
     generate() {
         //super secret hacker setting that enables custom ore
+        // note: if you enable this, you'll have to enable CPE in the constructor
         const useCustomOre = false;
+
+        // custom ore IDs, change them accordingly
+        const diamondOre = 68;
+        const redstoneOre = 69;
+        const lapisOre = 70;
+        const emeraldOre = 71;
         
         const area = this.x * this.z;
         const volume = this.x * this.y * this.z
@@ -217,10 +224,10 @@ class GenerationCaves extends Generation {
         doOre(41, 1, 1, 0.1, 8); //gold block
         doOre(42, 1, 1, 0.15, 16); //iron block
         if(useCustomOre) {
-            doOre(68, 1.5, 2, 0.2, 64); //diamond
-            doOre(69, 2, 5, 0.3, 96); //redstone (nice!)
-            doOre(70, 2, 5, 0.5, 96); //lapis
-            doOre(71, 1.2, 2, 0.8, 32); //emerald
+            doOre(diamondOre, 1.5, 2, 0.2, 64); //diamond
+            doOre(redstoneOre, 2, 5, 0.3, 96); //redstone (nice!)
+            doOre(lapisOre, 2, 5, 0.5, 96); //lapis
+            doOre(emeraldOre, 1.2, 2, 0.8, 32); //emerald
         }
         //grass (3d noise eats through it!!) and trees
         //post 3d noise heights

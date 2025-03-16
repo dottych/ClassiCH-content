@@ -2,7 +2,7 @@ const Generation = require('../../src/Generation');
 
 class GenerationFlat extends Generation {
     constructor() {
-        super("Flat", "dottych");
+        super("Flat", "dottych", false);
     }
 
     generate() {

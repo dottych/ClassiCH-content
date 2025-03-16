@@ -2,7 +2,7 @@ const Generation = require('../../src/Generation');
 
 class GenerationWalls extends Generation {
     constructor() {
-        super("Walls", "dottych");
+        super("Walls", "dottych", false);
     }
 
     generate() {

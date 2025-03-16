@@ -2,7 +2,7 @@ const Generation = require('../../src/Generation');
 
 class GenerationParkour extends Generation {
     constructor() {
-        super("Parkour", "gnawmon");
+        super("Parkour", "gnawmon", false);
     }
 
     generate() {

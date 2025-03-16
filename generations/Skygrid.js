@@ -2,7 +2,7 @@ const Generation = require('../../src/Generation');
 
 class GenerationSkygrid extends Generation {
     constructor() {
-        super("Skygrid", "gnawmon");
+        super("Skygrid", "gnawmon", false);
     }
 
     generate() {
